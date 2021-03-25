@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvfour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment four" />
+
+    <Button
+        android:id="@+id/buttonFourBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickFragmentFourBack"
+        android:text="BACK" />
+
+    <Button
+        android:id="@+id/buttonFourNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickFragmentFourNext"
+        android:text="NEXT" />
+</LinearLayout>

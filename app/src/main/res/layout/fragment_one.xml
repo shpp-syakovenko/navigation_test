@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment one" />
+
+    <Button
+        android:id="@+id/buttonOneBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickFragmentOneBack"
+        android:text="BACK" />
+
+    <Button
+        android:id="@+id/buttonOneNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickFragmentOneNext"
+        android:text="NEXT" />
+</LinearLayout>
