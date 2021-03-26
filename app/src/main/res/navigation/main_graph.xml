@@ -9,10 +9,6 @@
         android:id="@+id/fragmentOne"
         android:name="com.example.navigation.fragment.FragmentOne"
         android:label="FragmentOne" >
-        <argument
-            android:name="arg3"
-            app:argType="string"
-            android:defaultValue="test3" />
         <action
             android:id="@+id/action_fragmentOne_to_fragmentTwo"
             app:destination="@id/fragmentTwo" />
@@ -20,11 +16,38 @@
     <fragment
         android:id="@+id/fragmentTwo"
         android:name="com.example.navigation.fragment.FragmentTwo"
-        android:label="FragmentTwo" />
+        android:label="FragmentTwo">
+        <argument
+            android:name="key1"
+            app:argType="string"
+            android:defaultValue="defaultString"
+            />
+        <argument
+            android:name="key2"
+            app:argType="integer"
+            android:defaultValue="2"
+            />
+        <action
+            android:id="@+id/action_fragmentTwo_to_fragmentThree"
+            app:destination="@id/fragmentThree"
+            app:popUpTo="@id/fragmentOne" />
+    </fragment>
     <fragment
         android:id="@+id/fragmentThree"
         android:name="com.example.navigation.fragment.FragmentThree"
-        android:label="FragmentThree" />
+        android:label="FragmentThree">
+        <argument
+            android:name="args1"
+            android:defaultValue="same name"
+            app:argType="string" />
+        <argument
+            android:name="args2"
+            android:defaultValue="30"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_fragmentThree_to_secondActivity"
+            app:destination="@id/secondActivity" />
+    </fragment>
     <activity
         android:id="@+id/secondActivity"
         android:name="com.example.navigation.SecondActivity"
